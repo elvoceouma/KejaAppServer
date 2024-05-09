@@ -12,6 +12,8 @@ type User struct {
 	Email               string         `json:"email"`
 	Password            string         `json:"password"`
 	SocialLogin         bool           `json:"socialLogin"`
+	EmailVerified       bool           `json:"emailVerified"`
+	AccountVerified     bool           `json:"accountVerified"`
 	SocialProvider      string         `json:"socialProvider"`
 	Properties          []Property     `json:"properties"`
 	SavedProperties     datatypes.JSON `json:"savedProperties"`
